@@ -12,6 +12,48 @@ It favors shorter, outcome-first prompts with explicit success criteria, retriev
 - Replace vague "search a lot" guidance with a retrieval budget.
 - Add Responses API guidance for preambles, `previous_response_id`, and `phase` replay.
 
+## When To Use It
+
+Use `prompt-55` when a prompt, plan, or agent instruction set feels too broad, too process-heavy, or too tied to older model behavior. It is especially useful when the source material includes:
+
+- long procedural prompt stacks
+- vague research instructions like "search a lot" or "be thorough"
+- missing success criteria or stopping rules
+- unclear output expectations
+- tool-heavy or Responses API workflows
+- planning prompts that need validation, failure behavior, or handoff criteria
+
+Do not use it for generic copyediting, tone polishing, or rewriting prose unless the goal is specifically to improve GPT-5.5 behavior.
+
+## How To Ask
+
+Give the skill the source prompt or plan and the target surface:
+
+```text
+Use prompt-55 to revise this support-agent prompt for GPT-5.5.
+Preserve the required JSON output and escalation rules.
+[paste prompt]
+```
+
+Useful context to include:
+
+- where the prompt will run
+- who the user or audience is
+- required output format
+- tools or data sources available
+- known failure modes
+- constraints that must not change
+
+## What It Changes
+
+`prompt-55` keeps the product contract and rewrites around:
+
+- role, personality, goal, success criteria, constraints, output, and stop rules
+- retrieval budgets instead of open-ended search instructions
+- validation loops where verification is possible
+- concise preambles for longer tool-heavy tasks
+- Responses API state handling, including `previous_response_id` and `phase` preservation
+
 ## Install
 
 Clone this repo into your global Codex skills folder:

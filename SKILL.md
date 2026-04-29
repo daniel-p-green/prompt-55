@@ -26,7 +26,7 @@ Use this skill to produce concrete rewritten artifacts. Prefer compact, outcome-
 3. Remove legacy prompt weight.
    Cut duplicated rules, exhaustive step lists, unnecessary `ALWAYS` or `NEVER` language, vague personality padding, and process instructions that do not protect correctness.
 4. Rebuild around the outcome.
-   State the role, goal, success criteria, constraints, available evidence, output shape, and stop rules. Let the model choose the efficient solution path unless a step is truly required.
+   State the role, personality and collaboration style, goal, success criteria, constraints, output shape, and stop rules. Let the model choose the efficient solution path unless a step is truly required.
 5. Add GPT-5.5 controls selectively.
    Add reasoning effort, `text.verbosity`, preamble behavior, retrieval budget, citation rules, structured output guidance, tool-description placement, `phase` replay, or validation loops only when the target surface needs them.
 6. Return the revised artifact.

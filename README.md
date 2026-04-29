@@ -24,11 +24,11 @@ If your Codex setup uses explicit skill config entries, add:
 
 ```toml
 [[skills.config]]
-path = "/Users/YOUR_USER/.codex/skills/prompt-55/SKILL.md"
+path = "/absolute/path/to/.codex/skills/prompt-55/SKILL.md"
 enabled = true
 ```
 
-Replace `YOUR_USER` with your macOS username. Restart Codex or start a new session so the skill list refreshes.
+Replace the path with the real `SKILL.md` path on your machine. Restart Codex or start a new session so the skill list refreshes.
 
 ## Example
 

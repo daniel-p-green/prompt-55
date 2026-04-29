@@ -4,32 +4,31 @@ Use these patterns as starting points. Keep only sections that change behavior.
 
 ## Compact Prompt Structure
 
+Use this structure as the starting point for complex prompts. Keep each section short. Add detail only where it changes behavior.
+
 ```text
-Role: [1-2 sentences defining the assistant's job and context.]
+Role: [1-2 sentences defining the model's function, context, and job]
+
+# Personality
+[tone, demeanor, and collaboration style]
 
 # Goal
-[State the user-visible outcome.]
+[user-visible outcome]
 
-# Success Criteria
-- [Observable condition 1]
-- [Observable condition 2]
-- [Required completed action, decision, or artifact]
+# Success criteria
+[what must be true before the final answer]
 
 # Constraints
-- [Safety, policy, business, evidence, privacy, and side-effect limits]
-- [What not to change or invent]
-
-# Evidence And Tools
-- [Available sources or tools]
-- [When to retrieve more evidence]
-- [What to do if evidence is missing]
+[policy, safety, business, evidence, and side-effect limits]
 
 # Output
-[Required shape, length, tone, and fields.]
+[sections, length, and tone]
 
-# Stop Rules
-[When to answer, ask, retry, fallback, or abstain.]
+# Stop rules
+[when to retry, fallback, abstain, ask, or stop]
 ```
+
+Add evidence, tools, retrieval budgets, validation, or privacy details inside the nearest relevant section instead of creating extra top-level sections by default.
 
 ## Prompt Revision Checklist
 

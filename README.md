@@ -1,6 +1,6 @@
-# prompt55
+# prompt-55
 
-`prompt55` is a Codex skill for revising prompts, plans, agent instructions, and workflow specs for GPT-5.5.
+`prompt-55` is a Codex skill for revising prompts, plans, agent instructions, and workflow specs for GPT-5.5.
 
 It favors shorter, outcome-first prompts with explicit success criteria, retrieval budgets, stop rules, and validation loops instead of older process-heavy prompt stacks.
 
@@ -17,14 +17,14 @@ It favors shorter, outcome-first prompts with explicit success criteria, retriev
 Clone this repo into your global Codex skills folder:
 
 ```bash
-git clone https://github.com/daniel-p-green/prompt55.git ~/.codex/skills/prompt55
+git clone https://github.com/daniel-p-green/prompt-55.git ~/.codex/skills/prompt-55
 ```
 
 If your Codex setup uses explicit skill config entries, add:
 
 ```toml
 [[skills.config]]
-path = "/Users/YOUR_USER/.codex/skills/prompt55/SKILL.md"
+path = "/Users/YOUR_USER/.codex/skills/prompt-55/SKILL.md"
 enabled = true
 ```
 
@@ -35,7 +35,7 @@ Replace `YOUR_USER` with your macOS username. Restart Codex or start a new sessi
 Ask:
 
 ```text
-Use prompt55 to optimize this prompt for GPT-5.5:
+Use prompt-55 to optimize this prompt for GPT-5.5:
 "Be helpful and search a lot before answering."
 ```
 

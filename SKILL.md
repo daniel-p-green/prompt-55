@@ -1,10 +1,10 @@
 ---
-name: prompt55
+name: prompt-55
 description: This skill should be used when the user asks to "optimize this prompt for GPT-5.5", "revise this plan for gpt-5.5", "migrate this prompt to 5.5", "tighten this agent prompt", "improve retrieval budget", "improve validation rules", "add preamble behavior", or otherwise improve prompts, plans, agent instructions, workflow specs, or Responses API guidance for GPT-5.5.
 version: 0.1.0
 ---
 
-# prompt55
+# prompt-55
 
 Revise prompts, plans, agent instructions, and workflow specs so they fit GPT-5.5 instead of carrying forward older, process-heavy prompt stacks.
 

@@ -1,4 +1,4 @@
-# prompt55 Templates
+# prompt-55 Templates
 
 Use these patterns as starting points. Keep only sections that change behavior.
 
